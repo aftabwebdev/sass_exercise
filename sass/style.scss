@@ -1,0 +1,75 @@
+@import 'config';
+@import 'utilities';
+@import 'buttons';
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0; 
+}
+
+body{
+	background-color: $light_color;
+	font-family: $font_stack;
+	line-height: 1.6;
+}
+
+a{
+	text-decoration: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+img{
+	width: 100%;
+}
+
+.showcase {
+	background-color: $primary_color;
+	color: setTextColor($primary_color);
+	height: 100vh;
+
+	.navbar{height: 60px;}
+
+	
+	nav{
+		@include flexSpaceBetween();
+
+		a{
+			color: setTextColor($primary_color);
+			&:hover{
+				color: #ffa500;
+			}
+		}
+
+
+		ul{
+			display: flex;
+			li{
+				padding: 15px;
+			}
+		}
+	}
+
+
+	&-content{
+		height: calc(100vh - 60px);
+		@include flexCenter();
+
+		img{
+			width: 50%;
+		}
+
+		h1{
+			font-size: 50px;
+			line-height: 1.2;
+		}
+
+		p{
+			margin: 20px 0;
+		}
+	}
+}
+

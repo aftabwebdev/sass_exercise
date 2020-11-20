@@ -1,0 +1,25 @@
+$font_stack: Arial, Helvetica, sans-serif;
+$light_color: #b5c1f7;
+// $primary_color: #e0ffff;
+$primary_color: #0C6EFF;
+$secondary_color: #ff8700;
+
+@function setTextColor($color){
+	@if(lightness($color) > 70){
+		@return #333;
+	} @else {
+		@return #fff;
+	}
+}
+
+@mixin flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flexSpaceBetween {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
