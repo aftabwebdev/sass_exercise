@@ -1,0 +1,20 @@
+@media screen and (max-width: 720px){
+  .showcase{
+    text-align: center;
+
+    &-desp{
+      margin: 30px;
+    }
+
+    nav{
+      display: block;
+      ul{
+        @include flexCenter();
+      }
+    }
+
+    img{
+      display: none;
+    }
+  }
+}
