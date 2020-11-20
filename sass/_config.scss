@@ -3,6 +3,7 @@ $light_color: #b5c1f7;
 // $primary_color: #e0ffff;
 $primary_color: #0C6EFF;
 $secondary_color: #ff8700;
+$space_amounts: (1,2,3,4,5);
 
 @function setTextColor($color){
 	@if(lightness($color) > 70){
